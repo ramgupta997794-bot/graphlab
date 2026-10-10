@@ -1,0 +1,42 @@
+{
+  "name": "GraphLab — Interactive Mathematics Laboratory",
+  "short_name": "GraphLab",
+  "description": "Plot functions, drive parameters with sliders, and inspect curves in real time.",
+  "id": "/graphlab/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#0a0f24",
+  "theme_color": "#0a0f24",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
