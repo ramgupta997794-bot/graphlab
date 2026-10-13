@@ -40,7 +40,7 @@ build.
 
 ## Notes
 
+- The Android build bundles the app as one self-contained HTML file, so it runs
+  offline and does not depend on the WebView's ES-module support.
 - The maths parser is a hand-written recursive-descent parser; user input is never
   evaluated as JavaScript.
-- The whole app runs offline. The Android build is a thin WebView shell over the
-  same web bundle.
