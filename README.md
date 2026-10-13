@@ -1,32 +1,46 @@
-# GraphLab — live demo
+# GraphLab
 
-An interactive mathematics laboratory. This repository hosts the **built static
-site**, published with GitHub Pages.
+An interactive mathematics visualisation workspace — 2D function graphing and a 3D
+surface laboratory, with a rich set of animations you can run several at a time.
 
-## Open or install on your phone
+## Open it
 
-Open this link on your phone:
-
-**https://ramgupta997794-bot.github.io/graphlab/**
-
-Then install it as an app:
-
-- **Android (Chrome):** tap the **⋮** menu → **Add to Home screen** / **Install app**.
-- **iPhone (Safari):** tap **Share** → **Add to Home Screen**.
-
-It installs with its own icon, opens full-screen without browser chrome, and
-keeps working offline after the first visit.
+- **Web app:** https://ramgupta997794-bot.github.io/graphlab/
+- **Single file (offline, no install):** https://ramgupta997794-bot.github.io/graphlab/GraphLab.html
+- **Android app:** https://ramgupta997794-bot.github.io/graphlab/GraphLab.apk
 
 ## What it does
 
-- Enter functions of `x` and see them plotted instantly.
-- Any other letter (`a`, `b`, `h`, `k`) becomes a live parameter slider.
-- Multiple curves with independent colours and visibility.
-- Pan, pinch-zoom, fit-to-view, and tap-to-inspect coordinates.
-- Proper KaTeX typesetting for every expression.
-- Workspaces are saved locally on the device and survive a reload.
+**2D graphing** — plot several functions at once, pan and zoom, trace values, and
+run numeric calculus (derivative, integral, roots, limits).
 
-## Source
+**3D surfaces** — plot z = f(x, y), orbit with touch, colour by height, and read
+the coordinates of any point by tapping it.
 
-This repo contains only the compiled build. The full React + TypeScript + Vite
-source project is distributed separately.
+**Animations (2D: 13, 3D: 11)** — tap as many as you like and they run together:
+Draw-on, Comet, Pulse, Wave, March, Rainbow flow, Bounce, Zoom reveal, Fade,
+Scanline, Jitter, Spin, Morph. In 3D: Auto-rotate, Orbit, Float, Wave, Pulse,
+Colour cycle, Spin, Breathe, Spiral, Bob, Morph.
+
+**One-tap travelling wave** — loads sin(x - a) (2D) or sin(x - a)*cos(y) (3D)
+with Morph switched on, so the constant sweeps and the wave travels by itself.
+
+**Record** — save any animation as a shareable video.
+
+## Installing the Android app
+
+1. Open the APK link above on the phone.
+2. Tap the downloaded file.
+3. If Android asks, allow "Install unknown apps" for your browser.
+4. Tap Install.
+
+If you already have an older GraphLab installed, uninstall it first — the app is
+signed with a development key and Android will not overwrite a differently signed
+build.
+
+## Notes
+
+- The maths parser is a hand-written recursive-descent parser; user input is never
+  evaluated as JavaScript.
+- The whole app runs offline. The Android build is a thin WebView shell over the
+  same web bundle.
